@@ -8,7 +8,12 @@ import { useRouter } from 'next/navigation';
 const Login: React.FC = () => {
   const router = useRouter();
 
-  const onFinish = (values: any) => {
+  interface LoginFormValues {
+    email: string;
+    password: string;
+  }
+
+  const onFinish = (values: LoginFormValues) => {
     const { email, password } = values;
     if (email === 'admin@admin.com' && password === 'admin1234') {
       message.success('Inicio de sesión exitoso');

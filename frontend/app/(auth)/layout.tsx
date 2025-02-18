@@ -1,5 +1,5 @@
 'use client';
-import { Breadcrumb, Layout, theme } from 'antd';
+import { Layout, theme } from 'antd';
 import AppSidebar from "@/components/siderbar/Sidebar";
 import AppHeader from "@/components/header/Header";
 import AppFooter from "@/components/Footer";
